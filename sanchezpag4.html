@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghetto - Tutoriales</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #2c2c2c, #6b6b6b);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      min-height: 100vh;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: rgba(0, 0, 0, 0.9) !important;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    /* TITULO */
+    h1 {
+      margin: 40px 0 30px 0;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    /* CONTENEDOR DE TUTORIALES */
+    .tutorial-card {
+      background: rgba(26, 26, 26, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      transition: 0.3s;
+    }
+
+    .tutorial-card:hover {
+      border-color: #ff4d4d;
+      transform: translateY(-2px);
+    }
+
+    /* VIDEOS / IFRAMES */
+    .embed-responsive {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      transition: 0.3s;
+    }
+
+    .embed-responsive:hover {
+      transform: scale(1.02);
+    }
+
+    /* BUSCADOR */
+    .btn-outline-success {
+      border-radius: 20px;
+      border-color: #ff4d4d;
+      color: #ff4d4d;
+    }
+
+    .btn-outline-success:hover {
+      background: #ff4d4d;
+      color: white;
+      border-color: #ff4d4d;
+    }
+
+    /* LINKS FOOTER */
+    footer a {
+      color: white;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    footer a:hover {
+      color: #ff4d4d;
+      text-decoration: none;
+    }
+
+    /* FOOTER */
+    footer {
+      background: rgba(0, 0, 0, 0.9);
+      border-top: 2px solid #333;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">💈 GHETTO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="sanchezpag1.html">CORTES</a></li>
+          <li class="nav-item"><a class="nav-link" href="sanchezpag2.html">ARTICULOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="sanchezpag3.html">MARCAS</a></li>
+          <li class="nav-item active"><a class="nav-link" href="sanchezpag4.html">TUTORIALES</a></li>
+          <li class="nav-item"><a class="nav-link" href="sanchezpag5.html">AGENDAR CITA</a></li>
+        </ul>
+
+        <form class="form-inline">
+          <input class="form-control mr-2" type="search" placeholder="Buscar...">
+          <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="w-100 text-center">
+    <img src="imagenes/bannerk.png" class="img-fluid w-100" alt="Banner Ghetto Tutoriales">
+  </div>
+
+  <h1>TUTORIALES DE CORTES PROFESIONALES</h1>
+
+  <div class="container my-5">
+    <div class="row justify-content-center">
+
+      <div class="col-10 col-md-8 col-lg-6 mb-4">
+        <div class="tutorial-card p-4">
+          <h4 class="text-danger mb-3 font-weight-bold">Low Fade Profesional</h4>
+          
+          <div class="embed-responsive embed-responsive-16by9 mb-3">
+            <iframe class="embed-responsive-item" 
+                    src="lowfade.mp4" 
+                    title="Low Fade Tutorial" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+          
+          <p class="text-light mb-0">Aprende cómo hacer un Low Fade paso a paso usando máquina profesional y técnicas de difuminado.</p>
+        </div>
+      </div>
+
+      <div class="col-10 col-md-8 col-lg-6 mb-4">
+        <div class="tutorial-card p-4">
+          <h4 class="text-danger mb-3 font-weight-bold">Taper Fade Profesional</h4>
+          
+          <div class="embed-responsive embed-responsive-16by9 mb-3">
+            <iframe class="embed-responsive-item" 
+                    src="taperfadet.mp4" 
+                    title="Taper Fade Tutorial" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+          
+          <p class="text-light mb-0">Tutorial realizado por un barbero profesional donde explica cómo realizar un Taper Fade limpio.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-2"><a href="index.html">INICIO</a></div>
+        <div class="col-6 col-md-2 mb-2"><a href="sanchezpag1.html">ARTICULOS</a></div>
+        <div class="col-6 col-md-2 mb-2"><a href="sanchezpag2.html">CORTES</a></div>
+        <div class="col-6 col-md-2 mb-2"><a href="sanchezpag3.html">MARCAS</a></div>
+        <div class="col-6 col-md-2 mb-2"><a href="sanchezpag4.html">TUTORIALES</a></div>
+        <div class="col-6 col-md-2 mb-2"><a href="sanchezpag5.html">AGENDAR CITA</a></div>
+      </div>
+      <p class="text-muted small mt-3 mb-0">&copy; 2026 Ghetto Barber Shop. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghetto Barber Shop</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background: #0f0f0f;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: linear-gradient(90deg, #000, #2c2c2c);
+    }
+
+    /* TITULOS */
+    h1, h2, h3 {
+      text-align: center;
+      margin: 40px 0 25px 0;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+
+    /* IMAGENES */
+    img {
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    /* LINKS */
+    a {
+      color: #00c3ff;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    a:hover {
+      color: #00ffae;
+      text-decoration: none;
+    }
+
+    /* BOTON BUSCAR */
+    .btn-outline-success {
+      border-radius: 20px;
+      border-color: #00c3ff;
+      color: #00c3ff;
+    }
+
+    .btn-outline-success:hover {
+      background: #00c3ff;
+      color: black;
+      border-color: #00c3ff;
+    }
+
+    /* CARRUSEL */
+    .carousel-inner img {
+      width: 60%;
+      margin: auto;
+      border-radius: 15px;
+    }
+
+    /* CONTENEDORES DE PRODUCTOS */
+    .product-card {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      height: 100%;
+    }
+
+    /* REDES SOCIALES */
+    .social img {
+      transition: 0.3s;
+      width: 60px;
+    }
+
+    .social img:hover {
+      transform: scale(1.2);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #1a1a1a;
+      border-top: 2px solid #333;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">💈 GHETTO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="sanchezpag1.html">CORTES</a></li>
+          <li class="nav-item"><a class="nav-link" href="sanchezpag2.html">ARTICULOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="sanchezpag3.html">MARCAS</a></li>
+          <li class="nav-item"><a class="nav-link" href="sanchezpag4.html">TUTORIALES</a></li>
+          <li class="nav-item"><a class="nav-link" href="sanchezpag5.html">AGENDAR CITA</a></li>
+        </ul>
+
+        <form class="form-inline">
+          <input class="form-control mr-2" type="search" placeholder="Buscar...">
+          <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="w-100 text-center">
+    <img src="imagenes/bannerk.png" class="img-fluid w-100" alt="Banner Ghetto Barber Shop">
+  </div>
+  <h1 class="my-4">GHETTO BARBER SHOP</h1>
+
+  <div class="container my-5">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/publicidad1.png" class="d-block w-100" alt="Publicidad 1">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/publicidad2.png" class="d-block w-100" alt="Publicidad 2">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/publicidad3.png" class="d-block w-100" alt="Publicidad 3">
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row text-center">
+      <div class="col-md-3 col-6 mb-4">
+        <div class="product-card">
+          <img src="imagenes/magiclip.jpg" class="img-fluid mb-2" alt="Wahl Magic Clip">
+          <p class="mb-0"><a href="#">Wahl Magic Clip</a></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 mb-4">
+        <div class="product-card">
+          <img src="imagenes/andis.jpg" class="img-fluid mb-2" alt="Andis Master">
+          <p class="mb-0"><a href="#">Andis Master</a></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 mb-4">
+        <div class="product-card">
+          <img src="imagenes/gamma.jpg" class="img-fluid mb-2" alt="Gamma+">
+          <p class="mb-0"><a href="#">Gamma+</a></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 mb-4">
+        <div class="product-card">
+          <img src="imagenes/babyliss.jpg" class="img-fluid mb-2" alt="Babyliss Pro FX870">
+          <p class="mb-0"><a href="#">Babyliss Pro FX870</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>LO MEJOR</h2>
+  <div class="container my-4">
+    <div class="row align-items-center text-center text-md-left">
+      <div class="col-md-4 mb-4">
+        <div class="product-card d-flex flex-column align-items-center">
+          <img src="imagenes/babyliss.jpg" width="150" class="mb-2" alt="Babyliss">
+          <p class="small text-muted">Motor potente y diseño ergonómico ideal para largas jornadas.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="product-card d-flex flex-column align-items-center">
+          <img src="imagenes/senior.png" width="150" class="mb-2" alt="Senior">
+          <p class="small text-muted">Máxima potencia para cabello grueso.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="product-card d-flex flex-column align-items-center">
+          <img src="imagenes/ghost.jpg" width="150" class="mb-2" alt="Ghost">
+          <p class="small text-muted">Tecnología de cuchilla fría.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>RECOMENDADOS</h2>
+  <div class="container my-4">
+    <div class="row text-center text-md-left">
+      <div class="col-md-4 mb-4">
+        <div class="product-card d-flex flex-column align-items-center">
+          <img src="imagenes/revite.jpg" width="150" class="mb-2" alt="Revite">
+          <p class="small text-muted">Sistema de cuchillas intercambiables.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="product-card d-flex flex-column align-items-center">
+          <img src="imagenes/gtxexo.jpg" width="150" class="mb-2" alt="GTX Exo">
+          <p class="small text-muted">Torque extremo para cualquier cabello.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="product-card d-flex flex-column align-items-center">
+          <img src="imagenes/veloce.jpg" width="150" class="mb-2" alt="Veloce">
+          <p class="small text-muted">Motor silencioso de alto rendimiento.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Tu mejor opción</h2>
+  <div class="container my-4">
+    <div class="row text-center justify-content-center">
+      <div class="col-md-2 col-4 mb-3"><img src="imagenes/jrl.jpg" class="img-fluid" alt="JRL"></div>
+      <div class="col-md-2 col-4 mb-3"><img src="imagenes/blackfx.jpg" class="img-fluid" alt="Black FX"></div>
+      <div class="col-md-2 col-4 mb-3"><img src="imagenes/wahlsenior.jpg" class="img-fluid" alt="Wahl Senior"></div>
+      <div class="col-md-2 col-4 mb-3"><img src="imagenes/clipper.jpg" class="img-fluid" alt="Clipper"></div>
+      <div class="col-md-2 col-4 mb-3"><img src="imagenes/tpob.jpg" class="img-fluid" alt="TPOB"></div>
+      <div class="col-md-2 col-4 mb-3"><img src="imagenes/kemei.jpg" class="img-fluid" alt="Kemei"></div>
+      <div class="col-md-2 col-4 mb-3"><img src="imagenes/foil.jpg" class="img-fluid" alt="Foil"></div>
+      <div class="col-md-2 col-4 mb-3"><img src="imagenes/slime.jpg" class="img-fluid" alt="Slime"></div>
+      <div class="col-md-2 col-4 mb-3"><img src="imagenes/oster.jpg" class="img-fluid" alt="Oster"></div>
+      <div class="col-md-2 col-4 mb-3"><img src="imagenes/greenghost.jpg" class="img-fluid" alt="Green Ghost"></div>
+    </div>
+  </div>
+
+  <h3>Redes sociales</h3>
+  <div class="container text-center my-4 social">
+    <div class="d-flex justify-content-center gap-3">
+      <a href="#" class="mx-2"><img src="imagenes/facebook.png" alt="Facebook"></a>
+      <a href="#" class="mx-2"><img src="imagenes/insta.png" alt="Instagram"></a>
+      <a href="#" class="mx-2"><img src="imagenes/whats.jpg" alt="WhatsApp"></a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-2"><a href="index.html">INICIO</a></div>
+        <div class="col-6 col-md-2 mb-2"><a href="sanchezpag1.html">ARTICULOS</a></div>
+        <div class="col-6 col-md-2 mb-2"><a href="sanchezpag2.html">CORTES</a></div>
+        <div class="col-6 col-md-2 mb-2"><a href="sanchezpag3.html">MARCAS</a></div>
+        <div class="col-6 col-md-2 mb-2"><a href="sanchezpag4.html">TUTORIALES</a></div>
+        <div class="col-6 col-md-2 mb-2"><a href="sanchezpag5.html">AGENDAR CITA</a></div>
+      </div>
+      <p class="text-muted small mt-3 mb-0">&copy; 2026 Ghetto Barber Shop. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

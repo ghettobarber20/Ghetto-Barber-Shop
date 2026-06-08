@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghetto - Marcas</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #1c1c1c, #3a2a26);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      min-height: 100vh;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: rgba(0, 0, 0, 0.9) !important;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    /* TITULO */
+    h1 {
+      margin: 40px 0 30px 0;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    /* TARJETAS DE MARCAS */
+    .brand-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      transition: 0.3s ease-in-out;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      backdrop-filter: blur(5px);
+    }
+
+    .brand-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.1);
+      border-color: #c0392b;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    /* IMAGENES/LOGOS */
+    .brand-img-container {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .brand-card img {
+      max-height: 80px;
+      max-width: 140px;
+      object-fit: contain;
+      filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.5));
+      transition: 0.3s;
+    }
+
+    .brand-card:hover img {
+      transform: scale(1.08);
+    }
+
+    .brand-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    /* LINKS ENLACES */
+    .brand-link {
+      font-weight: bold;
+      color: #c0392b;
+      text-decoration: none;
+      transition: 0.2s;
+      border: 1px solid #c0392b;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    .brand-link:hover {
+      background: #c0392b;
+      color: white;
+      text-decoration: none;
+    }
+
+    /* BUSCADOR */
+    .btn-outline-success {
+      border-radius: 20px;
+      border-color: #c0392b;
+      color: #c0392b;
+    }
+
+    .btn-outline-success:hover {
+      background: #c0392b;
+      color: white;
+      border-color: #c0392b;
+    }
+
+    /* LINKS FOOTER */
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    footer a:hover {
+      color: #c0392b;
+      text-decoration: none;
+    }
+
+    /* FOOTER */
+    footer {
+      background: rgba(0, 0, 0, 0.9);
+      border-top: 2px solid #333;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">💈 GHETTO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="sanchezpag1.html">CORTES</a></li>
+          <li class="nav-item"><a class="nav-link" href="sanchezpag2.html">ARTICULOS</a></li>
+          <li class="nav-item active"><a class="nav-link" href="sanchezpag3.html">MARCAS</a></li>
+          <li class="nav-item"><a class="nav-link" href="sanchezpag4.html">TUTORIALES</a></li>
+          <li class="nav-item"><a class="nav-link" href="sanchezpag5.html">AGENDAR CITA</a></li>
+        </ul>
+
+        <form class="form-inline">
+          <input class="form-control mr-2" type="search" placeholder="Buscar...">
+          <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="w-100 text-center">
+    <img src="imagenes/bannerk.png" class="img-fluid w-100" alt="Banner Ghetto Marcas">
+  </div>
+
+  <h1>MARCAS FAMOSAS DE BARBERÍA</h1>
+
+  <div class="container my-5">
+    <div class="row">
+
+      <div class="col-6 col-sm-4 col-md-3 mb-4">
+        <div class="brand-card">
+          <div class="brand-name">Wahl</div>
+          <div class="brand-img-container">
+            <img src="imagenes/wahlogo.png" alt="Wahl">
+          </div>
+          <a href="https://wahlusa.com" target="_blank" rel="noopener" class="brand-link">Ir a tienda</a>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 mb-4">
+        <div class="brand-card">
+          <div class="brand-name">Andis</div>
+          <div class="brand-img-container">
+            <img src="imagenes/logoandis.png" alt="Andis">
+          </div>
+          <a href="https://andis.com" target="_blank" rel="noopener" class="brand-link">Ir a tienda</a>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 mb-4">
+        <div class="brand-card">
+          <div class="brand-name">BabylissPRO</div>
+          <div class="brand-img-container">
+            <img src="imagenes/logobaby.png" alt="BabylissPRO">
+          </div>
+          <a href="https://babylisspro.com" target="_blank" rel="noopener" class="brand-link">Ir a tienda</a>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 mb-4">
+        <div class="brand-card">
+          <div class="brand-name">Oster</div>
+          <div class="brand-img-container">
+            <img src="imagenes/logoster.png" alt="Oster">
+          </div>
+          <a href="https://www.osterpro.com" target="_blank" rel="noopener" class="brand-link">Ir a tienda</a>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 mb-4">
+        <div class="brand-card">
+          <div class="brand-name">Gamma+</div>
+          <div class="brand-img-container">
+            <img src="imagenes/gammalogo.png" alt="Gamma+">
+          </div>
+          <a href="https://gammaplusna.com" target="_blank" rel="noopener" class="brand-link">Ir a tienda</a>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 mb-4">
+        <div class="brand-card">
+          <div class="brand-name">StyleCraft</div>
+          <div class="brand-img-container">
+            <img src="imagenes/sclogo.png" alt="StyleCraft">
+          </div>
+          <a href="https://stylecraftus.com" target="_blank" rel="noopener" class="brand-link">Ir a tienda</a>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 mb-4">
+        <div class="brand-card">
+          <div class="brand-name">Reuzel</div>
+          <div class="brand-img-container">
+            <img src="imagenes/reuzel.png" alt="Reuzel">
+          </div>
+          <a href="https://reuzel.com" target="_blank" rel="noopener" class="brand-link">Ir a tienda</a>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 mb-4">
+        <div class="brand-card">
+          <div class="brand-name">Uppercut</div>
+          <div class="brand-img-container">
+            <img src="Imagenes/uppercut.png" alt="Uppercut Deluxe">
+          </div>
+          <a href="https://uppercutdeluxe.com" target="_blank" rel="noopener" class="brand-link">Ir a tienda</a>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 mb-4">
+        <div class="brand-card">
+          <div class="brand-name">Suavecito</div>
+          <div class="brand-img-container">
+            <img src="imagenes/suavecito.jpg" alt="Suavecito">
+          </div>
+          <a href="https://suavecito.com" target="_blank" rel="noopener" class="brand-link">Ir a tienda</a>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 mb-4">
+        <div class="brand-card">
+          <div class="brand-name">Layrite</div>
+          <div class="brand-img-container">
+            <img src="imagenes/layrite.png" alt="Layrite">
+          </div>
+          <a href="https://layrite.com" target="_blank" rel="noopener" class="brand-link">Ir a tienda</a>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 mb-4">
+        <div class="brand-card">
+          <div class="brand-name">Proraso</div>
+          <div class="brand-img-container">
+            <img src="imagenes/proraso.png" alt="Proraso">
+          </div>
+          <a href="https://proraso.com" target="_blank" rel="noopener" class="brand-link">Ir a tienda</a>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 mb-4">
+        <div class="brand-card">
+          <div class="brand-name">American Crew</div>
+          <div class="brand-img-container">
+            <img src="imagenes/american.png" alt="American Crew">
+          </div>
+          <a href="https://americancrew.com" target="_blank" rel="noopener" class="brand-link">Ir a tienda</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-2"><a href="index.html">INICIO</a></div>
+        <div class="col-6 col-md-2 mb-2"><a href="sanchezpag1.html">ARTICULOS</a></div>
+        <div class="col-6 col-md-2 mb-2"><a href="sanchezpag2.html">CORTES</a></div>
+        <div class="col-6 col-md-2 mb-2"><a href="sanchezpag3.html">MARCAS</a></div>
+        <div class="col-6 col-md-2 mb-2"><a href="sanchezpag4.html">TUTORIALES</a></div>
+        <div class="col-6 col-md-2 mb-2"><a href="sanchezpag5.html">AGENDAR CITA</a></div>
+      </div>
+      <p class="text-muted small mt-3 mb-0">&copy; 2026 Ghetto Barber Shop. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
