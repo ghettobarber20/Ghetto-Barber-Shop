@@ -1,0 +1,121 @@
+.boton .btn{
+    background: rgb(221, 129, 31);
+    border-radius: 5px;
+}
+
+.boton a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    display:block;
+    padding: 15px 10px;
+    width: 100px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.boton a:hover{
+    background-color: orangered;
+}*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: "calibri ligth";
+}
+.contenedor{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+header{
+    width: 100%;
+    height: 400px;
+    background: url("../imagenes/portad.webp");
+    background-position: center center;
+    background-size: cover;
+}
+
+main .perfil{
+    width: 150px;
+    height: 150px;
+    background: gray;
+    border: 8px solid white;
+    border-radius: 50%;
+    margin-top: -95px;
+    margin-bottom: 10px;
+    margin-left:auto ;
+    margin-right: auto;
+}
+main .perfil img{
+width: 100%;
+ border-radius: 50%;
+}
+
+main .texto h2{
+    text-align: center;
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+main .texto p{
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+table img{
+    height: 250px;
+    width: 70%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+table img:hover{
+    transform: scale(1.05);
+}
+
+.boton .btn{
+    background: rgb(221, 129, 31);
+    border-radius: 5px;
+}
+
+.boton a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    display:block;
+    padding: 15px 10px;
+    width: 100px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.boton a:hover{
+    background-color: orangered;
+}
+
+    footer{
+        background: teal;
+        text-align: center;
+        padding: 25px;
+        color: #ffffff;
+    }
+     
+main .foto{
+        width: 150px;
+        height: 150px;
+        background-color: teal;
+        border-radius: 50%;
+        margin: -90px 0 20px 0;
+        border: 6px solid #ffffff;
+    }
+    main .foto img{
+        width:100%;
+        border-radius:50%;
+    }    
+    
