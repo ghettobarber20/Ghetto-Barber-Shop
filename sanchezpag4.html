@@ -44,7 +44,7 @@
       transform: translateY(-2px);
     }
 
-    /* VIDEOS / IFRAMES */
+    /* VIDEOS / EMBEDS */
     .embed-responsive {
       border-radius: 12px;
       overflow: hidden;
@@ -54,6 +54,13 @@
 
     .embed-responsive:hover {
       transform: scale(1.02);
+    }
+
+    /* Ajuste para que el video HTML5 cubra bien el contenedor de Bootstrap */
+    .embed-responsive video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     /* BUSCADOR */
@@ -131,18 +138,27 @@
           <h4 class="text-danger mb-3 font-weight-bold">Low Fade Profesional</h4>
           
           <div class="embed-responsive embed-responsive-16by9 mb-3">
-            <iframe class="embed-responsive-item" 
-                    src="videos/video.mp4" 
-                    title="Tutorial Corte en Casa" 
-                    allowfullscreen>
-            </iframe>
+            <video controls>
+              <source src="videos/video.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de este video.
+            </video>
           </div>
           
           <p class="text-light mb-0">Aprende cómo hacer un Low Fade paso a paso usando máquina profesional y técnicas de difuminado.</p>
         </div>
       </div>
 
-    
+      <div class="col-10 col-md-8 col-lg-6 mb-4">
+        <div class="tutorial-card p-4">
+          <h4 class="text-danger mb-3 font-weight-bold">Taper Fade Limpio</h4>
+          
+          <div class="embed-responsive embed-responsive-16by9 mb-3">
+            <video controls>
+              <source src="videos/video2.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de este video.
+            </video>
+          </div>
+          
           <p class="text-light mb-0">Tutorial realizado por un barbero profesional donde explica cómo realizar un Taper Fade limpio.</p>
         </div>
       </div>
